@@ -1,12 +1,15 @@
 "use strict";
-
-function updateCurrentTimeUTC() {
-  const currentTime = new Date().toISOString();
+function updateCurrentTimeNigerian() {
+  const currentTime = new Date();
+  // Adjust the time to UTC+1 (Nigerian time)
+  const nigerianTime = new Date(
+    currentTime.setHours(currentTime.getHours() + 1)
+  );
   document.querySelector(
     '[data-testid="currentTimeUTC"]'
-  ).textContent = `Current time (UTC): ${currentTime}`;
+  ).textContent = `Current time (Nigerian time): ${nigerianTime.toISOString()}`;
 }
 
-updateCurrentTimeUTC();
+updateCurrentTimeNigerian();
 
-setInterval(updateCurrentTimeUTC, 60000);
+setInterval(updateCurrentTimeNigerian, 60000);
