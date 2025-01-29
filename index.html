@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile Card</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="profile-card">
+      <div class="profile-box">
+        <figure>
+          <img
+            src="asset/profile-picture.webp"
+            alt="Emmanuel"
+            data-testid="profilePicture"
+          />
+        </figure>
+      </div>
+      <div class="profile">
+        <h1 data-testid="fullName">Olowookere Oluwaseun Emmanuel</h1>
+        <h2 data-testid="jobTitle">Frontend Developer</h2>
+        <span class="line"></span>
+        <p data-testid="shortBio">
+          I'm a creative frontend developer skilled in building user-friendly
+          websites and apps with React. I love turning ideas into interactive
+          experiences, solving problems, and delivering sleek designs that users
+          enjoy.
+        </p>
+        <div class="profile-details">
+          <i class="fa fa-map-marker">
+            <span data-testid="currentLocation">Ibadan, Nigeria</span>
+          </i>
+          <i class="fa fa-paper-plane">
+            <span data-testid="emailAddress"
+              >olowookereseun123@gmail.com</span
+            ></i
+          >
+        </div>
+        <div class="social-links" data-testid="socialLinks">
+          <a href="https://www.linkedin.com" target="_blank">
+            <i class="fa fa-linkedin"></i>
+          </a>
+
+          <a
+            href="https://www.linkedin.com/in/emmanuel-olowookere-869262216/"
+            target="_blank"
+          >
+            <i class="fa fa-github"></i>
+          </a>
+
+          <a href="https://x.com/web_developer07" target="_blank"
+            ><i class="fa fa-twitter"></i
+          ></a>
+        </div>
+        <p class="utc" data-testid="currentTimeUTC"></p>
+      </div>
+    </div>
+  </body>
+</html>

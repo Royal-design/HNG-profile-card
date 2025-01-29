@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+body {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: rgb(85, 212, 240);
+  background: linear-gradient(
+    90deg,
+    rgba(85, 212, 240, 1) 0%,
+    rgba(17, 79, 109, 1) 100%
+  );
+}
+@media (max-width: 600px) {
+  body {
+    align-items: start;
+    background: #fff;
+    padding: 1rem;
+  }
+}
+.profile-card {
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 30rem;
+  min-width: 350px;
+  text-align: center;
+  overflow: hidden;
+}
+@media (max-width: 600px) {
+  .profile-card {
+    box-shadow: none;
+    border: 1px solid #55d4f0;
+  }
+}
+.profile-card .profile-box {
+  height: 12rem;
+  background: rgb(85, 212, 240);
+  background: linear-gradient(
+    90deg,
+    rgba(85, 212, 240, 1) 0%,
+    rgba(64, 151, 192, 1) 100%
+  );
+  border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+  position: relative;
+}
+@media (max-width: 600px) {
+  .profile-card .profile-box {
+    height: 14rem;
+  }
+}
+.profile-card figure {
+  bottom: -4rem;
+  transform: translateX(-50%);
+  left: 50%;
+
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  margin: 0 auto 10px;
+  display: block;
+}
+.profile-card figure img {
+  width: 100%;
+  border: 2px solid white;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.profile {
+  padding: 0 2rem 0 2rem;
+  margin-top: 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+.profile h1 {
+  font-size: 1.2rem;
+}
+.profile h2 {
+  font-size: 1rem;
+  color: #777;
+}
+.profile .line {
+  margin-top: -0.2rem;
+  height: 2px;
+  width: 80%;
+  background-color: black;
+}
+.profile p {
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  color: #777;
+}
+.profile .profile-details {
+  margin-top: 1rem;
+  border: 1px solid #dedede;
+  padding: 3px;
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+@media (max-width: 500px) {
+  .profile .profile-details {
+    flex-direction: column;
+    padding: 0.5rem;
+    box-shadow: none;
+    border: 1px solid #55d4f0;
+  }
+}
+.social-links {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  width: 100%;
+}
+.social-links i {
+  color: #ef6b2b;
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+.utc {
+  margin: 1rem 0 1rem 0;
+  font-size: 0.6rem;
+  color: #777;
+}
